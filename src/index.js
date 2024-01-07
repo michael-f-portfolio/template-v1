@@ -1,8 +1,5 @@
 import "styles/index.css";
+import "styles/globals.css";
+import startApp from "./scripts/functions/app";
 
-const title = document.createElement("h1");
-title.textContent = "index.js loaded";
-title.classList.add("title");
-
-const body = document.querySelector("body");
-body.appendChild(title);
+startApp();
