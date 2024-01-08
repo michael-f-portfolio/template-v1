@@ -1,6 +1,6 @@
-import MyController from "./controllers/MyController";
+import MainController from "./controllers/MainController";
 
 export default function startApp() {
-  const myController = new MyController();
+  const myController = new MainController();
   myController.initialize();
 }
