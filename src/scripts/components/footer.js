@@ -2,7 +2,8 @@ import "styles/footer.css";
 import sourceLogoPNG from "../../assets/imgs/github-mark.png";
 
 export default class Footer {
-  constructor(elementToAppendTo, sourceTextContent, sourceHref) {
+  constructor(parentElement, sourceTextContent, sourceHref) {
+    this.parent = parentElement;
     this.footer = document.createElement("footer");
 
     this.sourceContainer = document.createElement("div");
@@ -19,6 +20,6 @@ export default class Footer {
 
     this.sourceContainer.appendChild(this.sourceLink);
     this.footer.appendChild(this.sourceContainer);
-    elementToAppendTo.appendChild(this.footer);
+    this.parent.appendChild(this.footer);
   }
 }
